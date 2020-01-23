@@ -1,1 +1,364 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+@font-face {
+  font-family: 'Bangers';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Bangers Regular'), local('Bangers-Regular'), url(https://fonts.gstatic.com/s/bangers/v12/FeVQS0BTqb0h60ACH55Q3Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Barlow Condensed Regular'), local('BarlowCondensed-Regular'), url(https://fonts.gstatic.com/s/barlowcondensed/v4/HTx3L3I-JCGChYJ8VI-L6OO_au7B6xHT3w.ttf) format('truetype');
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: white;
+}
+.frame {
+  margin: 2%;
+}
+p {
+  font-size: 1.5rem;
+  font-family: 'Bangers', cursive;
+}
+h1 p {
+  font-size: 8rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-align: center;
+  padding-right: 100px;
+  display: flex;
+}
+@media (max-width: 800px) {
+  h1 p {
+    font-size: 7.5rem;
+  }
+}
+h2 {
+  font-size: 3rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  padding-bottom: 5%;
+}
+@media (max-width: 800px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+header .left {
+  margin-left: 20%;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+@media (max-width: 800px) {
+  header .left {
+    margin-left: 18%;
+    margin-top: 15%;
+  }
+}
+.title {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 6%;
+  width: 100%;
+}
+.title a {
+  border: 2px solid black;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 14%;
+  padding-right: 14%;
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.title .container {
+  margin-top: 50px;
+  padding-left: 30px;
+}
+.title .square {
+  text-align: right;
+  display: flex;
+  width: 63%;
+}
+@media (max-width: 800px) {
+  .title .square {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .title .square {
+    display: none;
+  }
+}
+.part1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.part1 nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 18vh;
+  width: 90%;
+  padding-top: 5%;
+  background-color: white;
+}
+@media (min-width: 501px) {
+  .part1 nav {
+    position: fixed;
+  }
+}
+@media (max-width: 800px) {
+  .part1 nav {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 8%;
+    height: 20vh;
+  }
+}
+@media (max-width: 500px) {
+  .part1 nav {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 20vh;
+  }
+}
+.part1 nav .profile {
+  padding-left: 3%;
+  width: 10%;
+}
+.part1 nav .toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 18vh;
+  width: 77%;
+}
+@media (max-width: 500px) {
+  .part1 nav .toolbar {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.part1 nav a {
+  font-size: 1.5rem;
+  margin: 2.5 1%;
+  padding: 1%;
+  color: black;
+  text-decoration: none;
+  display: flex;
+}
+@media (max-width: 500px) {
+  .part1 nav a {
+    border-bottom: 1px solid grey;
+    font-size: 20px;
+    width: 420px;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    justify-content: center;
+  }
+}
+.top {
+  display: flex;
+  border-top: 2.5px solid black;
+  margin: 0 8%;
+}
+@media (max-width: 500px) {
+  .top {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.top section {
+  padding: 4%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.bottom {
+  border-bottom: 2.5px solid black;
+  margin: 0 8%;
+}
+.bottom section {
+  padding: 4%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.bottom section ul {
+  list-style-type: disc;
+  font-size: 1.5rem;
+  font-family: 'Bangers', cursive;
+}
+.bottom section ul li {
+  padding-top: 4%;
+}
+.bottom #contact {
+  margin-bottom: 5px;
+}
+.bottom #contact .pe {
+  margin-top: 20px;
+}
+.rectangle img {
+  width: 100%;
+  padding: 0 65px;
+  display: flex;
+}
+footer {
+  padding-top: 5%;
+  margin: 0 8%;
+}
+footer .copyright {
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 80px;
+}
+footer form {
+  margin: 2rem auto;
+}
+footer form label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 0 0 1rem 0;
+}
