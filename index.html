@@ -2,6 +2,9 @@
 
 <html lang="en">
 <head>
+
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Barlow+Condensed&display=swap" rel="stylesheet">
+
   <meta charset="utf-8">
 
   <title>My Resume</title>
@@ -13,7 +16,145 @@
   <![endif]-->
 </head>
 
-<body>
-  <h1>My Resume</h1>
+<body class="frame"><!--in between the  as opening nad closing body tag is everything the user sees on the website-->
+  <div class="part1">
+
+    <nav>
+
+        <div class="toolbar">
+          <a href="#intro">Intro</a>
+          <a href="#skills">Skills</a>
+          <a href="#work_history">Work History</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+          <img class="profile" src="img/profile.png" alt="Profile picture">
+    
+      
+    </nav>
+
+  </div>
+  <!--title of the website-->
+
+  <header class="title">
+
+    <div class="left">
+
+      <h1>
+        <p>Angela<br>
+        Laien<br>
+        Xie</p>
+      </h1>
+
+      <div class="container">
+        <a href="https://github.com/angela-laien">View Projects</a>
+      </div>
+
+    </div>
+
+    <div class="square">
+
+      <img class="square" src="img/financial.png" alt="TransAmerica Building">
+
+    </div>
+
+  </header>
+
+  <div class="top">
+
+    <section id="intro">
+
+      <h2>Intro</h2>
+
+      <p>A motivated, organized, and dependable full stack web development program student studying and living in San Francisco. </p>
+
+    </section>
+
+    <section id="skills">
+
+      <h2>Skills</h2>
+
+      <p>I am skilled in JavaScript, HTML, CSS, React, Node, Java, Python, Express, and SQL.</p>
+      
+    </section>
+
+  </div>
+
+  <div class="rectangle">
+
+    <img class="middle-img" src="img/code.png" alt="Image of code snippets across the screen">
+
+  </div>
+
+  <div class="bottom">
+
+    <section id="work_history">
+
+      <h2>Work History</h2>
+
+      <ul>
+        <li>Office Manager (Contract)   Nov 2019 – Jan 2020    San Francisco, California</li>
+
+        <li>Facilities Coordinator-Operations (Contract)   Sep 2019 – Nov 2019   San Francisco, California</li>
+
+        <li>Move Services Assistant (Contract)   Jul 2019 – Sep 2019
+           San Francisco, California</li>
+
+        <li>Facilities Assistant-Reception(Contract)   Jun 2018 – Jul 2019   San Francisco, California</li>
+      </ul>
+
+    </section>
+
+    <section id="contact">
+
+      <h2>Contact</h2>
+
+      <address>
+        <p>123 Summit Way, San Francisco, CA 94132</p>
+      </address>
+      
+      <p class="pe">1 (888) 888-8888</p>
+      <p class="pe">laienxie@gmail.com</p>
+
+    </section>
+
+  </div>
+
+  <footer>
+
+    <section id="get_in_touch"> 
+
+      <div class="inner medium">
+        <h2>Get in touch</h2>
+        <form method="submission">
+          <div>
+            <div>
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" value="" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+                <input type="email" name="email" id="email" value="" />
+              </div>
+              <div>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="6"></textarea>
+              </div>
+            </div>
+          <ul class="actions special">
+            <li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+          </ul>
+        </form>
+
+      </div>
+
+    </section>
+
+    <p class="copyright">
+    Copyright Angela_laien 2020</p>
+
+  </footer>  
+    
 </body>
+
 </html>
